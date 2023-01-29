@@ -2,11 +2,11 @@
 
 	<PropertyGroup>
 
-		<VersionPrefix>0.0.1</VersionPrefix>
+		<VersionPrefix>0.0.2</VersionPrefix>
 		<VersionSuffix>preview</VersionSuffix>
 		<PackageTags>OrcardCore,EasyOC</PackageTags>
-		<VersionSuffix Condition="'$(VersionSuffix)'!='' AND '$(BuildNumber)' != ''">$(VersionSuffix)-$({DateTime.Now.ToString("yyyyMMddhhmm")})</VersionSuffix>
-		<Version>$(VersionPrefix)-$(VersionSuffix)</Version>
+		<VersionSuffix Condition="'$(VersionSuffix)'!='' AND '$(BuildNumber)' != ''">$(VersionSuffix)</VersionSuffix>
+		<!--<Version>$(VersionPrefix)-$(VersionSuffix)</Version>-->
 		<WarningsNotAsErrors>612,618</WarningsNotAsErrors>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<Description>EasyOC is committed to making OrchardCore development easier.</Description>
