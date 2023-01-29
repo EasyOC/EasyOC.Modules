@@ -32,8 +32,6 @@ your module's `Startup.cs`
             //sample 5 , Advanced configuration
             services.ReplaceAction(opt =>
             {
-                var type = typeof(EocAccountController);
-
                 opt.Items.Add(new ActionReplaceOptionItem
                 {
                     CustomAction = (descriptor) =>
