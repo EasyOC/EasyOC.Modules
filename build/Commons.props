@@ -1,42 +1,36 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="Dependencies.props" />
 
-  <PropertyGroup>
+	<PropertyGroup>
 
-    <VersionPrefix>1.5.0</VersionPrefix>
-    <VersionSuffix>preview</VersionSuffix>
-    <VersionSuffix Condition="'$(VersionSuffix)'!='' AND '$(BuildNumber)' != ''">$(VersionSuffix)-17183</VersionSuffix>
-    <WarningsNotAsErrors>612,618</WarningsNotAsErrors>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <NoWarn>$(NoWarn);CS1591</NoWarn>
-    <DebugType>portable</DebugType>
+		<VersionPrefix>0.0.1</VersionPrefix>
+		<VersionSuffix>preview</VersionSuffix>
+		<PackageTags>OrcardCore,EasyOC</PackageTags>
+		<VersionSuffix Condition="'$(VersionSuffix)'!='' AND '$(BuildNumber)' != ''">$(VersionSuffix)-$({DateTime.Now.ToString("yyyyMMddhhmm")})</VersionSuffix>
+		<Version>$(VersionPrefix)-$(VersionSuffix)</Version>
+		<WarningsNotAsErrors>612,618</WarningsNotAsErrors>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<Description>EasyOC is committed to making OrchardCore development easier.</Description>
+		<Copyright>EasyOC Team Community and Contributors</Copyright>
+		<Authors>EasyOC Team and Contributors</Authors>
+		<Owners>EasyOC Team Community and Contributors</Owners>
+		<NoWarn>$(NoWarn);CS1591</NoWarn>
+		<DebugType>portable</DebugType>
+		
+		<!-- Common NuGet properties-->
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
 
-    <!-- Common NuGet properties-->
-    <OCFrameworkDescription>EasyOC  Framework is an application framework for building modular, multi-tenant applications on ASP.NET Core.</OCFrameworkDescription>
-    <OCCMSDescription>EasyOC  CMS is a Web Content Management System (CMS) built on top of the EasyOC Team Framework.</OCCMSDescription>
-    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<!--This is used to generate symbol package for Source Link-->
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 
-    <!--This is used to generate symbol package for Source Link-->
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<!-- This is used by GitHub Repository to find which repository should contain the package when updloaded -->
+		<RepositoryUrl>https://github.com/EasyOC/EasyOC.Modules</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 
-    <!-- This is used by GitHub Repository to find which repository should contain the package when updloaded -->
-    <RepositoryUrl>https://github.com/EasyOC/EasyOC</RepositoryUrl>
-    <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
-
-    <PackageTags>EasyOC</PackageTags>
-    <Copyright>EasyOC Team Community and Contributors</Copyright>
-    <Authors>EasyOC Team and Contributors</Authors>
-    <Owners>EasyOC Team Community and Contributors</Owners>
-  </PropertyGroup>
-  <ItemGroup>
-
-    <!--This is used for Source Link -->
-<!--    <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All"/>-->
-  </ItemGroup>
-  <PropertyGroup>
-    <TargetFramework>$(CommonTargetFrameworks)</TargetFramework>
-  </PropertyGroup>
+	</PropertyGroup> 
+	<PropertyGroup>
+		<TargetFramework>$(CommonTargetFrameworks)</TargetFramework>
+	</PropertyGroup>
 </Project>

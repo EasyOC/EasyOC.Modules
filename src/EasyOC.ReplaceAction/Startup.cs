@@ -10,7 +10,7 @@ namespace EasyOC.ReplaceAction
     /// </summary>
     public class Startup : StartupBase
     {
-        public override int ConfigureOrder => 10000;
+        public override int ConfigureOrder => 1100;
         public override void ConfigureServices(IServiceCollection services)
         {
             services.AddActionReplaceService();

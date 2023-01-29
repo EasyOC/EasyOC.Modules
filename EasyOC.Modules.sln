@@ -5,6 +5,13 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyOC.ReplaceAction", "src\EasyOC.ReplaceAction\EasyOC.ReplaceAction.csproj", "{952C1929-ED23-4A07-BF0F-F50C65EC7920}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{2AB102CB-FF39-4FFC-928F-1C8A6B17590B}"
+	ProjectSection(SolutionItems) = preProject
+		build\Commons.props = build\Commons.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{999163BC-6289-4256-ABFC-5F70264A9C44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +25,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{952C1929-ED23-4A07-BF0F-F50C65EC7920} = {999163BC-6289-4256-ABFC-5F70264A9C44}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {71091DB5-1217-403F-AC42-EB7115ADAB2C}
