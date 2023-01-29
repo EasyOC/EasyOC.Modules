@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using Microsoft.AspNetCore.Mvc.Controllers;
+using System.Reflection;
 
 namespace EasyOC.ReplaceAction
 {
@@ -47,6 +48,8 @@ namespace EasyOC.ReplaceAction
         public Dictionary<string, MethodInfo> ActionMapping { get; set; }
         public Type NewController { get; set; }
         public string TargetControllerFullName { get; set; }
+
+        public Action<ControllerActionDescriptor> CustomAction { get; set; }
     }
 
 }

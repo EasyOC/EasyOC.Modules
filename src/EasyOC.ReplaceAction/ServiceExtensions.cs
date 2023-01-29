@@ -67,18 +67,28 @@ namespace EasyOC.ReplaceAction
               .OfType<ControllerActionDescriptor>()
               .ToArray();
 
-            foreach (var item in config.Items.OrderBy(x => x.Order))
+            foreach (var descriptor in descriptors)
             {
-                foreach (var descriptor in descriptors)
+                foreach (var item in config.Items.OrderBy(x => x.Order))
                 {
-                    if (descriptor.ControllerTypeInfo.FullName == item.TargetControllerFullName &&
-                       item.ActionMapping.ContainsKey(descriptor.ActionName)
-                        )
+                    if (item.CustomAction is not null)
                     {
-                        descriptor.ControllerTypeInfo = item.NewController.GetTypeInfo();
-                        descriptor.MethodInfo = item.ActionMapping[descriptor.ActionName];
+                        item.CustomAction(descriptor);
+                    }
+                    else
+                    {
+
+                        if (descriptor.ControllerTypeInfo.FullName == item.TargetControllerFullName &&
+                           item.ActionMapping.ContainsKey(descriptor.ActionName)
+                            )
+                        {
+                            descriptor.ControllerTypeInfo = item.NewController.GetTypeInfo();
+                            descriptor.MethodInfo = item.ActionMapping[descriptor.ActionName];
+                        }
                     }
                 }
+
+
             }
             return serviceProvider;
         }
