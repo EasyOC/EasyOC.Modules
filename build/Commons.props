@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 
-		<VersionPrefix>0.0.2</VersionPrefix>
+		<VersionPrefix>0.0.4</VersionPrefix>
 		<VersionSuffix>preview</VersionSuffix>
 		<PackageTags>OrcardCore,EasyOC</PackageTags>
 		<VersionSuffix Condition="'$(VersionSuffix)'!='' AND '$(BuildNumber)' != ''">$(VersionSuffix)</VersionSuffix>
@@ -26,7 +26,7 @@
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 
 		<!-- This is used by GitHub Repository to find which repository should contain the package when updloaded -->
-		<RepositoryUrl>https://github.com/EasyOC/EasyOC.Modules</RepositoryUrl>
+		<RepositoryUrl>https://github.com/EasyOC/EasyOC.Modules/tree/main/src/$(MSBuildProjectName)</RepositoryUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 
 	</PropertyGroup> 
