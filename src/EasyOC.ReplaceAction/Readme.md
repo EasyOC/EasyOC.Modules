@@ -8,7 +8,7 @@ dotnet add package EasyOC.ReplaceAction
 ![image](https://user-images.githubusercontent.com/15613121/215324237-f1b182fc-fa91-4043-9f3e-b7ccbae19a8a.png)
 3. Replace the controller in OrchardCore with your own controller method
 
-your module's `Startup.cs`
+update your module's `Startup.cs`
 
 ```C#
 public override void ConfigureServices(IServiceCollection services)
