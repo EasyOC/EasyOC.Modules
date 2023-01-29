@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)orchardcore.module.targets\1.5.0-preview-17118\build\OrchardCore.Module.Targets.targets" Condition="Exists('$(NuGetPackageRoot)orchardcore.module.targets\1.5.0-preview-17118\build\OrchardCore.Module.Targets.targets')" />
+  </ImportGroup>
+</Project>
