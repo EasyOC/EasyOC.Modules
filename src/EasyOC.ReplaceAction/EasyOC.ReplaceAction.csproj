@@ -1,19 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk.Razor">
- 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Title>OrchardCore ReplaceAction Module</Title>
-    <RepositoryUrl>$(RepositoryUrl)</RepositoryUrl>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="OrchardCore.Module.Targets" Version="1.5.0" />
-  </ItemGroup>
-
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+	<PropertyGroup>
+		<Title>OrchardCore ReplaceAction Module</Title>
+	</PropertyGroup>
+	<ItemGroup>
+	  <EmbeddedResource Remove="Readme.md" />
+	</ItemGroup>
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="Readme.md" />
+	</ItemGroup>
+	<!--<ItemGroup>
+		<PackageReference Include="OrchardCore.Module.Targets" Version="1.5.0-preview-17118" />
+		<PackageReference Include="OrchardCore.ContentManagement" Version="1.5.0-preview-17118" />
+		<PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="1.5.0-preview-17118" />
+		<PackageReference Include="OrchardCore.DisplayManagement" Version="1.5.0-preview-17118" />
+	</ItemGroup>-->
 </Project>

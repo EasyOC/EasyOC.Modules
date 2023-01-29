@@ -2,6 +2,9 @@
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 
 namespace EasyOC.ReplaceAction
@@ -56,7 +59,9 @@ namespace EasyOC.ReplaceAction
                     ActionMapping = new Dictionary<string, MethodInfo> { [actionName] = type.GetMethod(newActionName) }
                 });
             });
-        }
+        } 
+
+
         public static IServiceProvider UseReplaceAction(this IServiceProvider serviceProvider)
         {
             var rOptions = serviceProvider.GetRequiredService<IOptions<ActionReplaceOption>>();

@@ -2,5 +2,11 @@
 
   <Import Project="..\build\Commons.props" />
 
- 
+	<ItemGroup>
+		<PackageReference Include="OrchardCore.Module.Targets" Version="$(OrchardCoreVersion)" />
+		<PackageReference Include="OrchardCore.ContentManagement" Version="$(OrchardCoreVersion)" />
+		<PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="$(OrchardCoreVersion)" />
+		<PackageReference Include="OrchardCore.DisplayManagement" Version="$(OrchardCoreVersion)" />
+		<PackageReference Include="OrchardCore.OpenId.Core" Version="$(OrchardCoreVersion)" />
+	</ItemGroup>
 </Project>

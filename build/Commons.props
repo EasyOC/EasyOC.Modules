@@ -2,7 +2,8 @@
 
 	<PropertyGroup>
 
-		<VersionPrefix>0.0.4</VersionPrefix>
+		<VersionPrefix>0.0.12</VersionPrefix>
+		<OrchardCoreVersion>1.5.0</OrchardCoreVersion>
 		<VersionSuffix>preview</VersionSuffix>
 		<PackageTags>OrcardCore,EasyOC</PackageTags>
 		<VersionSuffix Condition="'$(VersionSuffix)'!='' AND '$(BuildNumber)' != ''">$(VersionSuffix)</VersionSuffix>
@@ -18,8 +19,10 @@
 		
 		<!-- Common NuGet properties-->
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
-
-		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<NetStandardImplicitPackageVersion>2.0.0-*</NetStandardImplicitPackageVersion>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
 
 		<!--This is used to generate symbol package for Source Link-->
 		<IncludeSymbols>true</IncludeSymbols>
@@ -27,10 +30,12 @@
 
 		<!-- This is used by GitHub Repository to find which repository should contain the package when updloaded -->
 		<RepositoryUrl>https://github.com/EasyOC/EasyOC.Modules/tree/main/src/$(MSBuildProjectName)</RepositoryUrl>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<PackageProjectUrl>https://github.com/EasyOC/EasyOC.Modules/</PackageProjectUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 
 	</PropertyGroup> 
 	<PropertyGroup>
-		<TargetFramework>$(CommonTargetFrameworks)</TargetFramework>
+		<TargetFramework>net6.0</TargetFramework>
 	</PropertyGroup>
 </Project>

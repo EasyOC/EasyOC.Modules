@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.Controllers;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 
 namespace EasyOC.ReplaceAction
@@ -7,7 +10,6 @@ namespace EasyOC.ReplaceAction
     public class ActionReplaceOption
     {
         public List<ActionReplaceOptionItem> Items { get; set; } = new List<ActionReplaceOptionItem>();
-
 
         /// <summary>
         /// Find first Match
@@ -27,7 +29,7 @@ namespace EasyOC.ReplaceAction
             var type = typeof(TargetNew);
             var typeInfo = type.GetTypeInfo();
 
-            var _actionMapping = actionMapping.Keys.ToDictionary(k => k, v => typeInfo.GetMethod(v));
+            var _actionMapping = actionMapping.Keys.ToDictionary(k => k, v => typeInfo.GetMethod(actionMapping[v]));
             Items.Add(new ActionReplaceOptionItem
             {
                 TargetControllerFullName = targetControllerName,
@@ -36,6 +38,7 @@ namespace EasyOC.ReplaceAction
             });
             return Items;
         }
+
         public List<ActionReplaceOptionItem> AddReplaceOption<SourceOld, TargetNew>(IDictionary<string, string> ActionMapping, int order = 0)
             where TargetNew : class
         {

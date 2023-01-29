@@ -11,6 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{2AB102CB
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{999163BC-6289-4256-ABFC-5F70264A9C44}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyOC.TestModule", "src\EasyOC.TestModule\EasyOC.TestModule.csproj", "{F1533816-94F6-4801-B4DF-9709E693BA02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,12 +27,17 @@ Global
 		{952C1929-ED23-4A07-BF0F-F50C65EC7920}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{952C1929-ED23-4A07-BF0F-F50C65EC7920}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{952C1929-ED23-4A07-BF0F-F50C65EC7920}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1533816-94F6-4801-B4DF-9709E693BA02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1533816-94F6-4801-B4DF-9709E693BA02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1533816-94F6-4801-B4DF-9709E693BA02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1533816-94F6-4801-B4DF-9709E693BA02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{952C1929-ED23-4A07-BF0F-F50C65EC7920} = {999163BC-6289-4256-ABFC-5F70264A9C44}
+		{F1533816-94F6-4801-B4DF-9709E693BA02} = {999163BC-6289-4256-ABFC-5F70264A9C44}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {71091DB5-1217-403F-AC42-EB7115ADAB2C}

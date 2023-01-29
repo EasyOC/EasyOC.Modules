@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using OrchardCore.Modules;
+using System;
 
 namespace EasyOC.ReplaceAction
 {
@@ -10,6 +11,7 @@ namespace EasyOC.ReplaceAction
     /// </summary>
     public class Startup : StartupBase
     {
+
         public override int ConfigureOrder => 1100;
         public override void ConfigureServices(IServiceCollection services)
         {
