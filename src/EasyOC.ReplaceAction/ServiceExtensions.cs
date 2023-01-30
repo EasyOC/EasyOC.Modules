@@ -55,7 +55,7 @@ namespace EasyOC.ReplaceAction
             });
         }
 
-        public static IServiceCollection ReplaceAction<TNew>(this IServiceCollection services, string targetControllerFullName, params string[] actionList)
+        public static IServiceCollection ReplaceActionByActionNames<TNew>(this IServiceCollection services, string targetControllerFullName, params string[] actionList)
             where TNew : class
         {
 

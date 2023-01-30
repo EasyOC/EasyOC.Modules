@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 
-		<VersionPrefix>0.0.6</VersionPrefix>
+		<VersionPrefix>0.0.9</VersionPrefix>
 		<OrchardCoreVersion>1.5.0</OrchardCoreVersion>
 		<VersionSuffix>preview</VersionSuffix>
 		<PackageTags>OrcardCore,EasyOC</PackageTags>
