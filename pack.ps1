@@ -9,6 +9,10 @@ $pkgs = Get-ChildItem ./src/ -recurse *.nupkg;
 
 foreach($pkg in $pkgs)
 {
- #  	dotnet nuget push $pkg.FullName -n true --skip-duplicate
- Write-Host $pkg.FullName
+  	dotnet nuget push $pkg.FullName -n true --skip-duplicate
+}
+$spkgs = Get-ChildItem ./src/ -recurse *.snupkg;
+foreach($spkg in $spkgs)
+{
+  	dotnet nuget push $spkg.FullName -n true --skip-duplicate
 }

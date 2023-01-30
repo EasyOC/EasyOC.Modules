@@ -43,6 +43,7 @@ namespace EasyOC.ReplaceAction
              });
         }
         public static IServiceCollection ReplaceAction<TNew>(this IServiceCollection services, string targetControllerFullName, string actionName, string newActionName = default)
+            where TNew : class
         {
             if (newActionName is null)
             {
@@ -50,17 +51,19 @@ namespace EasyOC.ReplaceAction
             }
             return services.ReplaceAction(opt =>
             {
-                var type = typeof(TNew);
-
-                opt.Items.Add(new ActionReplaceOptionItem
-                {
-                    TargetControllerFullName = targetControllerFullName,
-                    NewController = type,
-                    ActionMapping = new Dictionary<string, MethodInfo> { [actionName] = type.GetMethod(newActionName) }
-                });
+                opt.AddReplaceOption<TNew>(targetControllerFullName, new Dictionary<string, string>() { [actionName] = newActionName });
             });
-        } 
+        }
 
+        public static IServiceCollection ReplaceAction<TNew>(this IServiceCollection services, string targetControllerFullName, params string[] actionList)
+            where TNew : class
+        {
+
+            return services.ReplaceAction(opt =>
+            {
+                opt.AddReplaceOption<TNew>(targetControllerFullName, actionList.ToDictionary(s => s));
+            });
+        }
 
         public static IServiceProvider UseReplaceAction(this IServiceProvider serviceProvider)
         {

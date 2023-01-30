@@ -1,12 +1,13 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <Import Project="..\build\Commons.props" />
-
-	<ItemGroup>
+	<PropertyGroup>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+	<!--<ItemGroup>
 		<PackageReference Include="OrchardCore.Module.Targets" Version="$(OrchardCoreVersion)" />
 		<PackageReference Include="OrchardCore.ContentManagement" Version="$(OrchardCoreVersion)" />
 		<PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="$(OrchardCoreVersion)" />
 		<PackageReference Include="OrchardCore.DisplayManagement" Version="$(OrchardCoreVersion)" />
-		<PackageReference Include="OrchardCore.OpenId.Core" Version="$(OrchardCoreVersion)" />
-	</ItemGroup>
+	</ItemGroup>-->
 </Project>

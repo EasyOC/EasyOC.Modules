@@ -29,7 +29,8 @@ namespace EasyOC.ReplaceAction
             var type = typeof(TargetNew);
             var typeInfo = type.GetTypeInfo();
 
-            var _actionMapping = actionMapping.Keys.ToDictionary(k => k, v => typeInfo.GetMethod(actionMapping[v]));
+            var _actionMapping = actionMapping.ToDictionary(k => k.Key, v => type.GetMethod(actionMapping[v.Value]));
+
             Items.Add(new ActionReplaceOptionItem
             {
                 TargetControllerFullName = targetControllerName,

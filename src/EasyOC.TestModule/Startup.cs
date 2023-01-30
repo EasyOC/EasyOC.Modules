@@ -1,4 +1,3 @@
-using EasyOC.ReplaceAction;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
@@ -10,8 +9,6 @@ namespace EasyOC.TestModule
     {
         public override void ConfigureServices(IServiceCollection services)
         {
-            //Test
-            services.ReplaceAction(opt => Console.WriteLine(opt.Items.Count));
         }
 
         public override void Configure(IApplicationBuilder builder, IEndpointRouteBuilder routes, IServiceProvider serviceProvider)
