@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 
-		<VersionPrefix>0.0.9</VersionPrefix>
+		<VersionPrefix>0.1.1</VersionPrefix>
 		<OrchardCoreVersion>1.5.0</OrchardCoreVersion>
 		<VersionSuffix>preview</VersionSuffix>
 		<PackageTags>OrcardCore,EasyOC</PackageTags>
@@ -11,23 +11,15 @@
 		<WarningsNotAsErrors>612,618</WarningsNotAsErrors>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<Description>EasyOC is committed to making OrchardCore development easier.</Description>
-		<Copyright>EasyOC Team Community and Contributors</Copyright>
-		<Authors>EasyOC Team and Contributors</Authors>
+		<Copyright>Tony Han</Copyright>
+		<Authors>Tony Han</Authors>
 		<Owners>EasyOC Team Community and Contributors</Owners>
 		<NoWarn>$(NoWarn);CS1591</NoWarn>
-		<DebugType>portable</DebugType>
-		
-		<!-- Common NuGet properties-->
-		<EmbedUntrackedSources>true</EmbedUntrackedSources>
-		<!--<NetStandardImplicitPackageVersion>2.0.0-*</NetStandardImplicitPackageVersion>
-		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>-->
-
+	 
+		<ImplicitUsings>enable</ImplicitUsings>
 		<!--This is used to generate symbol package for Source Link-->
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- This is used by GitHub Repository to find which repository should contain the package when updloaded -->
 		<RepositoryUrl>https://github.com/EasyOC/EasyOC.Modules/tree/main/src/$(MSBuildProjectName)</RepositoryUrl>
@@ -35,8 +27,5 @@
 		<PackageProjectUrl>https://github.com/EasyOC/EasyOC.Modules/</PackageProjectUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 
-	</PropertyGroup> 
-	<PropertyGroup>
-		<TargetFramework>net6.0</TargetFramework>
-	</PropertyGroup>
+	</PropertyGroup>  
 </Project>

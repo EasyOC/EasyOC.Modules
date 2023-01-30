@@ -8,7 +8,8 @@ using OrchardCore.Modules.Manifest;
 )]
 [assembly: Feature(
     Id = "EasyOC.ReplaceAction",
-    Name = "ReplaceAction", 
+    Name = "ReplaceAction",
+    IsAlwaysEnabled = true,
     Description = "Override the controller action in OrchardCore with the specified controller method.",
-    Category = "Infrastructure"
+    Category = "Development"
 )]

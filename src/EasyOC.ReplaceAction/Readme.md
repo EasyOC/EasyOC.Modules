@@ -44,5 +44,14 @@ public override void ConfigureServices(IServiceCollection services)
             }
         });
     });
+    //sample 6 
+            services.ReplaceActionByActionNames<EocAccountController>(
+                typeof(AccountController).FullName, 
+                nameof(EocAccountController.LinkLoginCallback),
+                nameof(EocAccountController.ExternalLogins),
+                nameof(EocAccountController.LinkExternalLogin),
+                nameof(EocAccountController.ExternalLoginCallback),
+                nameof(EocAccountController.RegisterExternalLogin)
+                );
 }
 ```
