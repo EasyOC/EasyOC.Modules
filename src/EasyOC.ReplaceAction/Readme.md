@@ -4,6 +4,15 @@
 ```
 dotnet add package EasyOC.ReplaceAction
 ```
+
+The package must be added in the startup project, 
+
+and the 'PrivateAssets="none" option must be added if referenced in another project(not a startup project)
+
+```xml
+<PackageReference Include="EasyOC.ReplaceAction" PrivateAssets="none"/>
+```
+
 2. Enable the `EasyOC.ReplaceAction` feature
 ![image](https://user-images.githubusercontent.com/15613121/215324237-f1b182fc-fa91-4043-9f3e-b7ccbae19a8a.png)
 3. Replace the controller in OrchardCore with your own controller method
