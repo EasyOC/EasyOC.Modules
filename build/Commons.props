@@ -26,6 +26,7 @@
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<PackageProjectUrl>https://github.com/EasyOC/EasyOC.Modules/</PackageProjectUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<TargetFramework>net6.0</TargetFramework>
 
 	</PropertyGroup>  
 </Project>

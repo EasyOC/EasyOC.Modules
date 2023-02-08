@@ -11,7 +11,7 @@ namespace EasyOC.ReplaceAction
     /// </summary>
     public class Startup : StartupBase
     {
-        public override int Order => -999;
+        public override int Order => -900;
         public override int ConfigureOrder => 1100;
         public override void ConfigureServices(IServiceCollection services)
         {

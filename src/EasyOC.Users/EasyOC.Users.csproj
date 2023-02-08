@@ -1,16 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
 	<PropertyGroup>
-		<Title>OrchardCore ReplaceAction Module</Title>
 		<AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+		<ImplicitUsings>enable</ImplicitUsings>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	</PropertyGroup>
-	<ItemGroup>
-		<FrameworkReference Include="Microsoft.AspNetCore.App" />
-	</ItemGroup>
+
 	<ItemGroup>
 		<PackageReference Include="OrchardCore.Module.Targets" Version="$(OrchardCoreVersion)" />
 		<PackageReference Include="OrchardCore.ContentManagement" Version="$(OrchardCoreVersion)" />
 		<PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="$(OrchardCoreVersion)" />
 		<PackageReference Include="OrchardCore.DisplayManagement" Version="$(OrchardCoreVersion)" />
+
+		<PackageReference Include="OrchardCore.OpenId.Core" Version="$(OrchardCoreVersion)" />
+
+		<PackageReference Include="OrchardCore.Users" Version="$(OrchardCoreVersion)" /> 
+		<ProjectReference Include="..\EasyOC.ReplaceAction\EasyOC.ReplaceAction.csproj" />
 	</ItemGroup>
+
 </Project>
