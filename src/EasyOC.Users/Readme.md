@@ -1,4 +1,17 @@
-﻿This module implements some controller action replacement with the help of `EasyOC.ReplaceAction`.
+
+## EasyOC.Users
+
+This module implements some controller action replacement with the help of `EasyOC.ReplaceAction`.
+
+## Nuget
+
+[![NuGet](https://img.shields.io/nuget/v/EasyOC.Users.svg)](https://www.nuget.org/packages/EasyOC.Users)
+
+## Orchard Core Reference
+
+This module is referencing a stable build of Orchard Core ([`1.5.0`](https://www.nuget.org/packages/OrchardCore.Module.Targets/1.5.0)).
+
+
 
 The UserLogin Script in OrchardCore now supports the following features
 
@@ -14,9 +27,8 @@ dotnet add package EasyOC.Users
 ```
 2. Enable the `EasyOC.Users` feature
 
-3. Update your login script
+3. Update your login script to look like this
 
-Sample:
 ```js
 log("Warning", "Login-ExternalLoginProvider "+ context.loginProvider +  JSON.stringify(context));
 
