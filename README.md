@@ -1,4 +1,4 @@
-## [ActionReplace](src/EasyOC.ReplaceAction)
+## [EasyOC.ActionReplace](src/EasyOC.ReplaceAction)
 [![NuGet](https://img.shields.io/nuget/v/EasyOC.Users.svg)](https://www.nuget.org/packages/EasyOC.Users)
 
 Replace the implementation of the specified controller action in OrchardCore
