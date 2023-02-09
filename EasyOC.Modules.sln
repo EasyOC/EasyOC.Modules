@@ -3,22 +3,36 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyOC.ReplaceAction", "src\EasyOC.ReplaceAction\EasyOC.ReplaceAction.csproj", "{952C1929-ED23-4A07-BF0F-F50C65EC7920}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{2AB102CB-FF39-4FFC-928F-1C8A6B17590B}"
 	ProjectSection(SolutionItems) = preProject
 		build\Commons.props = build\Commons.props
+		build\Commons.targets = build\Commons.targets
 		pack.ps1 = pack.ps1
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{999163BC-6289-4256-ABFC-5F70264A9C44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyOC.ReplaceAction", "src\Modules\EasyOC.ReplaceAction\EasyOC.ReplaceAction.csproj", "{952C1929-ED23-4A07-BF0F-F50C65EC7920}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyOC.Users", "src\Modules\EasyOC.Users\EasyOC.Users.csproj", "{04D4CFB1-0A2E-4058-BDE2-E26C623F4F2F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyOC.SwaggerUI", "src\Modules\EasyOC.SwaggerUI\EasyOC.SwaggerUI.csproj", "{9C4736A2-1005-4132-9548-B2E1F3C830E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{BBA3C688-E8AD-4177-9817-24D3C097D98A}"
 	ProjectSection(SolutionItems) = preProject
-		src\Directory.Build.props = src\Directory.Build.props
+		src\Shared\Directory.Build.props = src\Shared\Directory.Build.props
+		src\Shared\Directory.Build.targets = src\Shared\Directory.Build.targets
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyOC.TestModule", "src\EasyOC.TestModule\EasyOC.TestModule.csproj", "{F1533816-94F6-4801-B4DF-9709E693BA02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyOC.Extensions", "src\Shared\EasyOC.Extensions\EasyOC.Extensions.csproj", "{D4572AB9-35A0-4D0A-B6B7-3A49F26BFF31}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyOC.Users", "src\EasyOC.Users\EasyOC.Users.csproj", "{04D4CFB1-0A2E-4058-BDE2-E26C623F4F2F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{2C8B39D9-E86E-4BB6-ABAD-22CA1B2EA299}"
+	ProjectSection(SolutionItems) = preProject
+		src\Modules\Directory.Build.props = src\Modules\Directory.Build.props
+		src\Modules\Directory.Build.targets = src\Modules\Directory.Build.targets
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyOC.Constants", "src\Shared\EasyOC.Constants\EasyOC.Constants.csproj", "{8C6A4607-9E38-43C3-8738-DDFAE12B9B6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyOC.CMS.Web", "src\EasyOC.CMS.Web\EasyOC.CMS.Web.csproj", "{2083F636-DF1A-4F23-A052-B2095D06AD9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,22 +44,36 @@ Global
 		{952C1929-ED23-4A07-BF0F-F50C65EC7920}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{952C1929-ED23-4A07-BF0F-F50C65EC7920}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{952C1929-ED23-4A07-BF0F-F50C65EC7920}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F1533816-94F6-4801-B4DF-9709E693BA02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F1533816-94F6-4801-B4DF-9709E693BA02}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F1533816-94F6-4801-B4DF-9709E693BA02}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F1533816-94F6-4801-B4DF-9709E693BA02}.Release|Any CPU.Build.0 = Release|Any CPU
 		{04D4CFB1-0A2E-4058-BDE2-E26C623F4F2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{04D4CFB1-0A2E-4058-BDE2-E26C623F4F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04D4CFB1-0A2E-4058-BDE2-E26C623F4F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04D4CFB1-0A2E-4058-BDE2-E26C623F4F2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C4736A2-1005-4132-9548-B2E1F3C830E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C4736A2-1005-4132-9548-B2E1F3C830E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C4736A2-1005-4132-9548-B2E1F3C830E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C4736A2-1005-4132-9548-B2E1F3C830E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4572AB9-35A0-4D0A-B6B7-3A49F26BFF31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4572AB9-35A0-4D0A-B6B7-3A49F26BFF31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4572AB9-35A0-4D0A-B6B7-3A49F26BFF31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4572AB9-35A0-4D0A-B6B7-3A49F26BFF31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C6A4607-9E38-43C3-8738-DDFAE12B9B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C6A4607-9E38-43C3-8738-DDFAE12B9B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C6A4607-9E38-43C3-8738-DDFAE12B9B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C6A4607-9E38-43C3-8738-DDFAE12B9B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2083F636-DF1A-4F23-A052-B2095D06AD9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2083F636-DF1A-4F23-A052-B2095D06AD9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2083F636-DF1A-4F23-A052-B2095D06AD9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2083F636-DF1A-4F23-A052-B2095D06AD9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{952C1929-ED23-4A07-BF0F-F50C65EC7920} = {999163BC-6289-4256-ABFC-5F70264A9C44}
-		{F1533816-94F6-4801-B4DF-9709E693BA02} = {999163BC-6289-4256-ABFC-5F70264A9C44}
-		{04D4CFB1-0A2E-4058-BDE2-E26C623F4F2F} = {999163BC-6289-4256-ABFC-5F70264A9C44}
+		{952C1929-ED23-4A07-BF0F-F50C65EC7920} = {2C8B39D9-E86E-4BB6-ABAD-22CA1B2EA299}
+		{04D4CFB1-0A2E-4058-BDE2-E26C623F4F2F} = {2C8B39D9-E86E-4BB6-ABAD-22CA1B2EA299}
+		{9C4736A2-1005-4132-9548-B2E1F3C830E0} = {2C8B39D9-E86E-4BB6-ABAD-22CA1B2EA299}
+		{D4572AB9-35A0-4D0A-B6B7-3A49F26BFF31} = {BBA3C688-E8AD-4177-9817-24D3C097D98A}
+		{8C6A4607-9E38-43C3-8738-DDFAE12B9B6B} = {BBA3C688-E8AD-4177-9817-24D3C097D98A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {71091DB5-1217-403F-AC42-EB7115ADAB2C}

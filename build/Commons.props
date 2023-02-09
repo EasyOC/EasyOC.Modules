@@ -28,5 +28,10 @@
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<TargetFramework>net6.0</TargetFramework>
 
-	</PropertyGroup>  
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageManagement Include="Newtonsoft.Json" Version="13.0.2" />
+		<!--<PackageManagement Include="NJsonSchema" Version="10.5.2" />-->
+		<PackageManagement Include="NSwag.AspNetCore" Version="13.13.2" />
+	</ItemGroup>
 </Project>
