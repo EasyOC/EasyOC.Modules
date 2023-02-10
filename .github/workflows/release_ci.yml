@@ -1,10 +1,7 @@
 name: Release - CI
 on:
   push:
-    paths-ignore:
-      - '**/*.md'
-      - 'mkdocs.yml'
-      - 'src/docs/**/*'
+    branches: [ master ]
     tags: 
       - 'v*.*.*'
 
@@ -14,7 +11,7 @@ env:
 jobs:
   test:
     runs-on: ${{ matrix.os }}
-    name: Build, Test, Deploy
+    name: Build,Deploy
     strategy:
       fail-fast: false
       matrix:
