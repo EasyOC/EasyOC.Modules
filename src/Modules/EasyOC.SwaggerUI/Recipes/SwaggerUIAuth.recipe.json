@@ -1,0 +1,69 @@
+﻿{
+  "name": "SwaggerUIAuth",
+  "displayName": "EasyOC SwaggerUI Auth",
+  "description": "EasyOC SwaggerUI Auth",
+  "author": "EasyOC",
+  "website": "EasyOC",
+  "version": "",
+  "issetuprecipe": false,
+  "categories": [],
+  "tags": [],
+  "steps": [
+    {
+      "name": "OpenIdServerSettings",
+      "AccessTokenFormat": 1,
+      "Authority": null,
+      "DisableAccessTokenEncryption": false,
+      "EncryptionCertificateStoreLocation": null,
+      "EncryptionCertificateStoreName": null,
+      "EncryptionCertificateThumbprint": null,
+      "SigningCertificateStoreLocation": null,
+      "SigningCertificateStoreName": null,
+      "SigningCertificateThumbprint": null,
+      "EnableTokenEndpoint": true,
+      "EnableAuthorizationEndpoint": true,
+      "EnableLogoutEndpoint": true,
+      "EnableUserInfoEndpoint": true,
+      "EnableIntrospectionEndpoint": false,
+      "EnableRevocationEndpoint": false,
+      "AllowPasswordFlow": false,
+      "AllowClientCredentialsFlow": false,
+      "AllowAuthorizationCodeFlow": true,
+      "AllowRefreshTokenFlow": true,
+      "AllowHybridFlow": false,
+      "AllowImplicitFlow": false,
+      "DisableRollingRefreshTokens": false,
+      "RequireProofKeyForCodeExchange": false,
+      "UseReferenceAccessTokens": false
+    },
+    {
+      "DisplayName": "SwaggerClient",
+      "name": "OpenIdApplication",
+      "ClientId": "SwaggerClient",
+      "ConsentType": "implicit",
+      "RedirectUris": "/Swagger/oauth2-redirect.html",
+      "AllowAuthorizationCodeFlow": true,
+      "AllowLogoutEndpoint": false,
+      "AllowPasswordFlow": false,
+      "ScopeEntries": [
+        { "Name": "openid" },
+        { "Name": "profile" }
+      ],
+      "Type": "public"
+    },
+    {
+      "name": "OpenIdScope",
+      "Description": "A scope to provide openid for remote clients",
+      "DisplayName": "openid Scope",
+      "ScopeName": "openid",
+      "Resources": "my_recipient"
+    },
+    {
+      "name": "OpenIdScope",
+      "Description": "A scope to provide profile for remote clients",
+      "DisplayName": "profile Scope",
+      "ScopeName": "profile",
+      "Resources": "my_recipient"
+    }
+  ]
+}
