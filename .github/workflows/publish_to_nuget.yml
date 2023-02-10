@@ -1,7 +1,6 @@
 name: Publish to NuGet
 on:
   push:
-  
     tags:
       - v*
 
