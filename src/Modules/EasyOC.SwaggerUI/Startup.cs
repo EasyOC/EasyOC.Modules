@@ -18,7 +18,7 @@ namespace EasyOC.SwaggerUI
             services.AddScoped<INavigationProvider, AdminMenuSwaggerUI>();
 
             // 注册Swagger生成器，定义一个和多个Swagger 文档
-            services.AddSwaggerGen(async options =>
+            services.AddSwaggerGen(options =>
             {
                 options.UseInlineDefinitionsForEnums();
                 options.DocumentFilter<SwaggerDocumentFilter>();
@@ -99,7 +99,7 @@ namespace EasyOC.SwaggerUI
         {
             app.UseSwagger();
             //启用中间件服务对swagger-ui，指定Swagger JSON终结点
-            app.UseSwaggerUI(async options =>
+            app.UseSwaggerUI(options =>
             {
                 var env = serviceProvider.GetRequiredService<IHostEnvironment>();
                 if (env.IsDevelopment())

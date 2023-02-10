@@ -25,12 +25,12 @@ namespace System
             return JArray.FromObject(obj);
         }
 
-        public static T? ToObject<T>(this object obj)
+        public static T ToObject<T>(this object obj)
         {
             return JObject.FromObject(obj).ToObject<T>();
         }
 
-        public static T? ToObject<T>(this JObject obj)
+        public static T ToObject<T>(this JObject obj)
         {
             return obj.ToObject<T>();
         }

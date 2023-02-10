@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<AddRazorSupportForMvc>true</AddRazorSupportForMvc>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		
 	</PropertyGroup>
 
 	<ItemGroup>

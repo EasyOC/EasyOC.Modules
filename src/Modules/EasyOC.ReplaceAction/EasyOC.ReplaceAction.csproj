@@ -2,7 +2,7 @@
 	<PropertyGroup>
 		<Title>OrchardCore ReplaceAction Module</Title>
 		<AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		
 	</PropertyGroup>
 	<ItemGroup>
 		<FrameworkReference Include="Microsoft.AspNetCore.App" />
