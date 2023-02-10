@@ -21,16 +21,16 @@ jobs:
       id: get_version
       run: |
         arrTag=(${GITHUB_REF//\// })
-        echo arrTag
+        echo arrTag ${arrTag}
         VERSION="${arrTag[2]}"
         VERSION="${VERSION//v}"
         echo VERSION:${VERSION}
         echo ::set-output name=VERSION::${VERSION}
       shell: bash
     - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: "15"
+   # - uses: actions/setup-node@v3
+   #   with:
+   #     node-version: "16"
     - name: Setup .NET 6.0
       uses: actions/setup-dotnet@v3
       with:
