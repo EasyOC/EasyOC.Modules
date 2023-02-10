@@ -1,18 +1,18 @@
-## [EasyOC.ActionReplace](src/EasyOC.ReplaceAction)
+## [EasyOC.ActionReplace](src/Modules/EasyOC.ReplaceAction)
 [![NuGet](https://img.shields.io/nuget/v/EasyOC.Users.svg)](https://www.nuget.org/packages/EasyOC.Users)
 
 Replace the implementation of the specified controller action in OrchardCore
 
-## [EasyOC.Users](src/EasyOC.Users)
+## [EasyOC.Users](src/Modules/EasyOC.Users)
 [![NuGet](https://img.shields.io/nuget/v/EasyOC.Users.svg)](https://www.nuget.org/packages/EasyOC.Users)
 
 This module implements some controller action replacement with the help of `EasyOC.ReplaceAction`.
 
-The UserLogin Script in OrchardCore now supports the following features
+## [EasyOC.SwaggerUI](src/Modules/EasyOC.SwaggerUI)
+[![NuGet](https://img.shields.io/nuget/v/EasyOC.SwaggerUI.svg)](https://www.nuget.org/packages/EasyOC.SwaggerUI)
 
-- [x] Update custom user settings properties
-- [x] Update `UserClaims`
-
+- Adding Swagger UI support to OrchardCore
+- Integration OpenId code flow authentication
 
 ## Orchard Core Reference
 
