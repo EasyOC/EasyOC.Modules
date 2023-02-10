@@ -5,8 +5,8 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{2AB102CB-FF39-4FFC-928F-1C8A6B17590B}"
 	ProjectSection(SolutionItems) = preProject
-		build\Commons.props = build\Commons.props
-		build\Commons.targets = build\Commons.targets
+		EasyOC.build\Commons.props = EasyOC.build\Commons.props
+		EasyOC.build\Commons.targets = EasyOC.build\Commons.targets
 		pack.ps1 = pack.ps1
 	EndProjectSection
 EndProject

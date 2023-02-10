@@ -2,6 +2,7 @@
 
 	<PropertyGroup>
 		<AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>
