@@ -29,7 +29,7 @@ namespace EasyOC.ReplaceAction
             var type = typeof(TargetNew);
             var typeInfo = type.GetTypeInfo();
 
-            var _actionMapping = actionMapping.ToDictionary(k => k.Key, v => type.GetMethod(actionMapping[v.Value]));
+            var _actionMapping = actionMapping.ToDictionary(k => k.Key, v => type.GetMethod(actionMapping[v.Key]));
 
             Items.Add(new ActionReplaceOptionItem
             {
