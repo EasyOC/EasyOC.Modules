@@ -1,9 +1,9 @@
-name: Release - CI
+name: Publish to NuGet
 on:
   push:
-    branches: [ main ]
-    tags: 
-      - 'v*.*.*'
+    tags:
+      - v*
+
 jobs:
   publish-nuget:
     uses: Lombiq/GitHub-Actions/.github/workflows/publish-nuget.yml@dev
