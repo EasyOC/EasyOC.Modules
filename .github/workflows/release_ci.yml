@@ -21,6 +21,7 @@ jobs:
       id: get_version
       run: |
         arrTag=(${GITHUB_REF//\// })
+        echo arrTag
         VERSION="${arrTag[2]}"
         VERSION="${VERSION//v}"
         echo VERSION:${VERSION}
