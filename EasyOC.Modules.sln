@@ -32,8 +32,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{2C8B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyOC.Constants", "src\Shared\EasyOC.Constants\EasyOC.Constants.csproj", "{8C6A4607-9E38-43C3-8738-DDFAE12B9B6B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyOC.CMS.Web", "src\EasyOC.CMS.Web\EasyOC.CMS.Web.csproj", "{2083F636-DF1A-4F23-A052-B2095D06AD9C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,10 +58,6 @@ Global
 		{8C6A4607-9E38-43C3-8738-DDFAE12B9B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C6A4607-9E38-43C3-8738-DDFAE12B9B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C6A4607-9E38-43C3-8738-DDFAE12B9B6B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2083F636-DF1A-4F23-A052-B2095D06AD9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2083F636-DF1A-4F23-A052-B2095D06AD9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2083F636-DF1A-4F23-A052-B2095D06AD9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2083F636-DF1A-4F23-A052-B2095D06AD9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
