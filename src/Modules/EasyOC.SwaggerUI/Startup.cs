@@ -7,7 +7,6 @@ using Microsoft.OpenApi.Models;
 using OrchardCore.Environment.Shell.Scope;
 using OrchardCore.Modules;
 using OrchardCore.Navigation;
-using OrchardCore.Settings;
 
 namespace EasyOC.SwaggerUI
 {
