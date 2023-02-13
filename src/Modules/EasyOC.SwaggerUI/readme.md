@@ -7,8 +7,8 @@
 
 ## How to use?
 
-1. Enable "EasyOC.SwaggerUI" in Feature List
-1. Run “EasyOC SwaggerUI Auth” in Recipes List
+1. Enable `EasyOC.SwaggerUI` Feature  
+1. Run Recipes :`EasyOC SwaggerUI Auth`
 1. Config Authentication
 - In Admin menus , Open : Security > OpenID Connect > Applications 
 - Locate SwaggerClient in the list of applications, Edit
