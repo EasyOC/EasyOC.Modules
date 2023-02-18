@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.Controllers;
+﻿using Castle.Core.Logging;
+using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -75,6 +76,9 @@ namespace EasyOC.ReplaceAction
               .OfType<ControllerActionDescriptor>()
               .ToArray();
 
+            var logger = serviceProvider.GetService<ILogger>();
+
+
             foreach (var descriptor in descriptors)
             {
                 foreach (var item in config.Items.OrderBy(x => x.Order))
@@ -92,6 +96,15 @@ namespace EasyOC.ReplaceAction
                         {
                             descriptor.ControllerTypeInfo = item.NewController.GetTypeInfo();
                             descriptor.MethodInfo = item.ActionMapping[descriptor.ActionName];
+                            if (logger != null && logger.IsDebugEnabled)
+                            {
+                                logger.DebugFormat("The Action:{action} of controller:{type} is replaced by {newContorller}.{method}",
+                                    item.TargetControllerFullName,
+                                    descriptor.ActionName,
+                                    descriptor.ControllerTypeInfo.FullName,
+                                    item.ActionMapping[descriptor.ActionName]
+                                );
+                            }
                         }
                     }
                 }

@@ -9,6 +9,7 @@ using OrchardCore.Users.Handlers;
 
 namespace EasyOC.Users
 {
+    [Feature("EasyOC.Users")]
     [RequireFeatures("OrchardCore.Users", "EasyOC.ReplaceAction")]
     public class Startup : StartupBase
     {
@@ -33,7 +34,7 @@ namespace EasyOC.Users
         }
 
     }
-
+    [Feature("EasyOC.OpenId.ImplicitLogout")]
     [RequireFeatures("OrchardCore.OpenId", "EasyOC.ReplaceAction")]
     public class OpenIdStartup : StartupBase
     {

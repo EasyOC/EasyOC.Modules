@@ -15,7 +15,7 @@ using OrchardCore.Modules.Manifest;
 
 
 [assembly: Feature(
-    Id = "EasyOC.OpenId",
+    Id = "EasyOC.OpenId.ImplicitLogout",
     Name = "Implicit logout",
     Dependencies = new[] { "OrchardCore.OpenId", "EasyOC.ReplaceAction" },
     Description = "Confirmation is no longer required when logging out using OpenId",
