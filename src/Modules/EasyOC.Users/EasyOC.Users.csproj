@@ -12,7 +12,7 @@
 		<PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="$(OrchardCoreVersion)" />
 		<PackageReference Include="OrchardCore.DisplayManagement" Version="$(OrchardCoreVersion)" />
 
-		<PackageReference Include="OrchardCore.OpenId.Core" Version="$(OrchardCoreVersion)" />
+		<PackageReference Include="OrchardCore.OpenId" Version="$(OrchardCoreVersion)" />
 
 		<PackageReference Include="OrchardCore.Users" Version="$(OrchardCoreVersion)" /> 
 		<ProjectReference Include="..\EasyOC.ReplaceAction\EasyOC.ReplaceAction.csproj" />
