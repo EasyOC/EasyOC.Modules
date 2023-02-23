@@ -7,6 +7,6 @@ on:
 jobs:
   publish-nuget:
   #https://github.com/Lombiq/GitHub-Actions/blob/dev/Docs/Workflows.md#nuget-publish-workflow
-    uses: EasyOC/GitHub-Actions/.github/workflows/publish-nuget.yml@dev
+    uses: EasyOC/GitHub-Actions/.github/workflows/publish-nuget.yml@version_rule
     secrets:
       API_KEY: ${{ secrets.NUGET_API_KEY }}
