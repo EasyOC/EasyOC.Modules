@@ -19,6 +19,12 @@ This module implements some controller action replacement with the help of `Easy
 - Adding Swagger UI support to OrchardCore
 - Integration OpenId code flow authentication
 
+## [EasyOC.Workflows](src/Modules/EasyOC.Workflows)
+[![NuGet](https://img.shields.io/nuget/v/EasyOC.Workflows.svg)](https://www.nuget.org/packages/EasyOC.Workflows)
+### EasyOC.Workflows.Timers
+Make the Timer Workflow Activty support site time zone.
+
+
 ## Orchard Core Reference
 
 This repositry is referencing a stable build of Orchard Core ([`1.5.0`](https://www.nuget.org/packages/OrchardCore.Module.Targets/1.5.0)).
