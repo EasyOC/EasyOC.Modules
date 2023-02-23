@@ -1,0 +1,7 @@
+@using EasyOC.Workflows.Timers
+@model ActivityViewModel<TimerEvent>
+
+<header>
+    <h4><i class="fa fa-clock-o" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Timer"])</h4>
+</header>
+<span>@T["<em>{0}</em>", Model.Activity.CronExpression]</span>

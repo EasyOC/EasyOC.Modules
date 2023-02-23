@@ -1,0 +1,15 @@
+@model EasyOC.Workflows.Timers.TimerEventViewModel
+
+<div class="mb-3" asp-validation-class-for="CronExpression">
+    <label asp-for="CronExpression">@T["CRON Expression"]</label>
+    <input type="text" asp-for="CronExpression" class="form-control" autofocus />
+    <span asp-validation-for="CronExpression"></span>
+    <span class="hint">@T["The CRON expression."]</span>
+</div>
+ 
+<div class="mb-3">
+    <div class="form-check">
+        <input asp-for="UseSiteTimeZone" type="checkbox" class="form-check-input">
+        <label class="form-check-label" asp-for="UseSiteTimeZone">@T["Use the site time zone instead of Utc."]</label>
+    </div>
+</div>

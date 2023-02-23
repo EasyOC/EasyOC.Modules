@@ -2,10 +2,8 @@
 using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 
 namespace EasyOC.ReplaceAction
@@ -69,6 +67,7 @@ namespace EasyOC.ReplaceAction
         public static IServiceProvider UseReplaceAction(this IServiceProvider serviceProvider)
         {
             var rOptions = serviceProvider.GetRequiredService<IOptions<ActionReplaceOption>>();
+            var logger = serviceProvider.GetService<ILogger>();
             var config = rOptions.Value;
 
             var descriptors = serviceProvider.GetRequiredService<IActionDescriptorCollectionProvider>()
@@ -96,9 +95,9 @@ namespace EasyOC.ReplaceAction
                         {
                             descriptor.ControllerTypeInfo = item.NewController.GetTypeInfo();
                             descriptor.MethodInfo = item.ActionMapping[descriptor.ActionName];
-                            if (logger != null && logger.IsDebugEnabled)
+                            if (logger != null && logger.IsEnabled(LogLevel.Debug))
                             {
-                                logger.DebugFormat("The Action:{action} of controller:{type} is replaced by {newContorller}.{method}",
+                                logger.LogDebug("The Action:{action} of controller:{type} is replaced by {newContorller}.{method}",
                                     item.TargetControllerFullName,
                                     descriptor.ActionName,
                                     descriptor.ControllerTypeInfo.FullName,
