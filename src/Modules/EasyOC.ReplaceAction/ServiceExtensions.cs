@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.Controllers;
+﻿using Castle.Core.Logging;
+using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -73,6 +74,9 @@ namespace EasyOC.ReplaceAction
               .ActionDescriptors.Items
               .OfType<ControllerActionDescriptor>()
               .ToArray();
+
+            var logger = serviceProvider.GetService<ILogger>();
+
 
             foreach (var descriptor in descriptors)
             {

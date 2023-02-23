@@ -1,3 +1,8 @@
+
+QQ 群:877196442 或者点击这里
+[![Orchard Core CN 中文讨论组](https://docs.orchardcore.net/en/latest/docs/assets/images/orchard-core-cn-community-logo.png)](https://shang.qq.com/wpa/qunwpa?idkey=48721591a71ee7586316604a7a4ee99d26fd977c6120370a06585085a5936f62) 
+
+
 ## [EasyOC.ActionReplace](src/Modules/EasyOC.ReplaceAction)
 [![NuGet](https://img.shields.io/nuget/v/EasyOC.Users.svg)](https://www.nuget.org/packages/EasyOC.Users)
 
