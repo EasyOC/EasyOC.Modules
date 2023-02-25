@@ -10,7 +10,7 @@ The UserLogin Script in OrchardCore now supports the following features
 
 ## Nuget
 
-[![NuGet Badge](https://buildstats.info/nuget/Users.SwaggerUI?includePreReleases=true)](https://www.nuget.org/packages/EasyOC.Users)
+[![NuGet Badge](https://buildstats.info/nuget/EasyOC.Users?includePreReleases=true)](https://www.nuget.org/packages/EasyOC.Users)
 
 
 ## Orchard Core Reference
