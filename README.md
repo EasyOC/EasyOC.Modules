@@ -25,6 +25,14 @@ This module implements some controller action replacement with the help of `Easy
 Make the Timer Workflow Activty support site time zone.
 
 
+## [EasyOC.Deployment](src/Modules/EasyOC.Deployment)
+[![NuGet](https://img.shields.io/nuget/v/EasyOC.Deployment.svg)](https://www.nuget.org/packages/EasyOC.Deployment)
+
+Improve the OC `Deployment` feature
+
+ 
+
+
 ## Orchard Core Reference
 
 This repositry is referencing a stable build of Orchard Core ([`1.5.0`](https://www.nuget.org/packages/OrchardCore.Module.Targets/1.5.0)).
