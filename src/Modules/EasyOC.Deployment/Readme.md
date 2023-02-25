@@ -15,7 +15,7 @@ Improve the OC `Deployment` feature, including
 
 ## Nuget
 
-[![NuGet](https://img.shields.io/nuget/v/EasyOC.Deployment.svg)](https://www.nuget.org/packages/EasyOC.Deployment)
+[![NuGet Badge](https://buildstats.info/nuget/EasyOC.Deployment?includePreReleases=true)](https://www.nuget.org/packages/EasyOC.Deployment)
 
 ## Orchard Core Reference
 
