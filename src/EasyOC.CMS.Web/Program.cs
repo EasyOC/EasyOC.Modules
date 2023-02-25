@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Identity;
 using OrchardCore.Logging;
-using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
