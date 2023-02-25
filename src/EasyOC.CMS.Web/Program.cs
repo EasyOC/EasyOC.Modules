@@ -1,16 +1,27 @@
+using Microsoft.AspNetCore.Identity;
 using OrchardCore.Logging;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Host.UseNLogHost();
 
 builder.Services
+     .Configure<IdentityOptions>(options =>
+     {
+         options.Password.RequireDigit = false;
+         options.Password.RequireLowercase = false;
+         options.Password.RequireUppercase = false;
+         options.Password.RequireNonAlphanumeric = false;
+         options.Password.RequiredUniqueChars = 3;
+         options.Password.RequiredLength = 6;
+     })
     .AddOrchardCms()
-    // // Orchard Specific Pipeline
-    // .ConfigureServices( services => {
-    // })
-    // .Configure( (app, routes, services) => {
-    // })
+// // Orchard Specific Pipeline
+// .ConfigureServices( services => {
+// })
+// .Configure( (app, routes, services) => {
+// })
 ;
 
 var app = builder.Build();

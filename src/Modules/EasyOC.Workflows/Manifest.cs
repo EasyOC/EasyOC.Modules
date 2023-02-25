@@ -1,5 +1,5 @@
 using OrchardCore.Modules.Manifest;
-using static EasyOC.Constants.ManifestConstants;
+using static EasyOC.Shared.Constants.ManifestConstants;
 [assembly: Module(
     Author = Author,
     Website = Website,

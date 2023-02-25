@@ -1,4 +1,4 @@
-﻿namespace EasyOC.Constants;
+﻿namespace EasyOC.Shared.Constants;
 
 public static class ManifestConstants
 {

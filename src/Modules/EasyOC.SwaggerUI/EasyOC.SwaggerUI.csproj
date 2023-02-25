@@ -19,10 +19,8 @@
 		<PackageReference Include="OrchardCore.DisplayManagement" Version="$(OrchardCoreVersion)" />
 	</ItemGroup>
 
-
 	<ItemGroup>
-	  <ProjectReference Include="..\..\Shared\EasyOC.Constants\EasyOC.Constants.csproj" />
-	  <ProjectReference Include="..\..\Shared\EasyOC.Extensions\EasyOC.Extensions.csproj" />
+	  <ProjectReference Include="..\..\Shared\EasyOC.Shared.Extensions\EasyOC.Shared.Extensions.csproj" />
 	</ItemGroup>
 
 </Project>

@@ -17,8 +17,19 @@
 		<PackageReference Include="OrchardCore.Deployment" Version="$(OrchardCoreVersion)" />
 		<PackageReference Include="OrchardCore.Queries" Version="$(OrchardCoreVersion)" />
 		<PackageReference Include="OrchardCore.Roles" Version="$(OrchardCoreVersion)" />
+	</ItemGroup>
 
-		<ProjectReference Include="..\..\Shared\EasyOC.Constants\EasyOC.Constants.csproj" />
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Shared\EasyOC.Shared.Constants\EasyOC.Shared.Constants.csproj" />
+	  <ProjectReference Include="..\..\Shared\EasyOC.Shared.Extensions\EasyOC.Shared.Extensions.csproj" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Readme.md">
+	    <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+	  </EmbeddedResource>
 	</ItemGroup>
 
 
