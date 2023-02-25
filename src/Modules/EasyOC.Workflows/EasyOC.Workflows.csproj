@@ -20,7 +20,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\Shared\EasyOC.Constants\EasyOC.Constants.csproj" />
+	  <ProjectReference Include="..\..\Shared\EasyOC.Shared.Constants\EasyOC.Shared.Constants.csproj" />
 	</ItemGroup>
 
 </Project>

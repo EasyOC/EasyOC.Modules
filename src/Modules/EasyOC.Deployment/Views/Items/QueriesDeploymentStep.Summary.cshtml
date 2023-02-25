@@ -1,0 +1,27 @@
+@using EasyOC.Deployment.Deployment;
+@using OrchardCore.DisplayManagement.Views;
+@using OrchardCore.Queries;
+@model ShapeViewModel<QueriesDeploymentStep>
+@inject IQueryManager queryManager
+
+<h5>@T["Queries"]</h5>
+@if (Model.Value.IncludeAll)
+{
+    <span class="badge ta-badge">All</span>
+}
+else
+{
+    var queries = await queryManager.ListQueriesAsync();
+
+    queries = queries.WhereIf(!Model.Value.IncludeAll, x => Model.Value.Queries.Contains(x.Name));
+
+    if (queries.Count() > 0)
+    {
+        foreach (var query in queries)
+        {
+            <span class="badge ta-badge">@query.Name</span>
+        }
+    }
+}
+<span class="hint d-block">@T["Adds queries to the plan."]</span>
+
