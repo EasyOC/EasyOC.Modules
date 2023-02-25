@@ -2,14 +2,12 @@
 ## EasyOC.Deployment
 
 
-This module readds the implementation of exporting specified content
-
-This module implements the export of specified content, including
-1. The specified query
-2. The assigned role
+Improve the OC `Deployment` feature, including
+1. The specified queies
+2. The assigned roles
 
 ## Plan realization
-[] The specified `WorkflowTypes`
+- [ ] The specified `WorkflowTypes`
 
 ## Nuget
 
