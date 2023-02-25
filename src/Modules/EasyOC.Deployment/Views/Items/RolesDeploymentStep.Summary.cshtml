@@ -1,0 +1,23 @@
+@using EasyOC.Deployment.Deployment;
+@using OrchardCore.DisplayManagement.Views;
+@using OrchardCore.Security.Services;
+@model ShapeViewModel<RolesDeploymentStep>
+@inject IRoleService roleService;
+<h5>@T["Roles"]</h5>
+@if (Model.Value.IncludeAll)
+{
+    <span class="badge ta-badge">All</span>
+}
+else
+{
+    var roles = await roleService.GetRolesAsync();
+    var roleNames = roles.WhereIf(!Model.Value.IncludeAll, x => Model.Value.Names.Contains(x.RoleName));
+    if (roleNames.Count() > 0)
+    {
+        foreach (var role in roleNames)
+        {
+            <span class="badge ta-badge">@role.RoleName</span>
+        }
+    }
+}
+<span class="hint d-block">@T["Adds specified roles to the plan."]</span>

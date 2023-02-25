@@ -24,6 +24,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\Modules\EasyOC.Deployment\EasyOC.Deployment.csproj" />
 		<ProjectReference Include="..\Modules\EasyOC.ReplaceAction\EasyOC.ReplaceAction.csproj" />
 		<ProjectReference Include="..\Modules\EasyOC.SwaggerUI\EasyOC.SwaggerUI.csproj" />
 		<ProjectReference Include="..\Modules\EasyOC.Users\EasyOC.Users.csproj" />

@@ -36,6 +36,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyOC.CMS.Web", "src\EasyO
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyOC.Workflows", "src\Modules\EasyOC.Workflows\EasyOC.Workflows.csproj", "{EB0C3FDC-1125-4194-9FCA-1EE7A1B6FA8B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyOC.Deployment", "src\Modules\EasyOC.Deployment\EasyOC.Deployment.csproj", "{F48E4020-5C6A-42D5-A692-E31DC0B0D20D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +72,10 @@ Global
 		{EB0C3FDC-1125-4194-9FCA-1EE7A1B6FA8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB0C3FDC-1125-4194-9FCA-1EE7A1B6FA8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB0C3FDC-1125-4194-9FCA-1EE7A1B6FA8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F48E4020-5C6A-42D5-A692-E31DC0B0D20D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48E4020-5C6A-42D5-A692-E31DC0B0D20D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48E4020-5C6A-42D5-A692-E31DC0B0D20D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48E4020-5C6A-42D5-A692-E31DC0B0D20D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +87,7 @@ Global
 		{D4572AB9-35A0-4D0A-B6B7-3A49F26BFF31} = {BBA3C688-E8AD-4177-9817-24D3C097D98A}
 		{8C6A4607-9E38-43C3-8738-DDFAE12B9B6B} = {BBA3C688-E8AD-4177-9817-24D3C097D98A}
 		{EB0C3FDC-1125-4194-9FCA-1EE7A1B6FA8B} = {2C8B39D9-E86E-4BB6-ABAD-22CA1B2EA299}
+		{F48E4020-5C6A-42D5-A692-E31DC0B0D20D} = {2C8B39D9-E86E-4BB6-ABAD-22CA1B2EA299}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {71091DB5-1217-403F-AC42-EB7115ADAB2C}
