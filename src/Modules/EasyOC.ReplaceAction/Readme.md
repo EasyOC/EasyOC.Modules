@@ -4,7 +4,7 @@ Replace the implementation of the specified controller action in OrchardCore
 
 ## Nuget
 
-[![NuGet](https://img.shields.io/nuget/v/EasyOC.ReplaceAction.svg)](https://www.nuget.org/packages/EasyOC.ReplaceAction)
+[![NuGet Badge](https://buildstats.info/nuget/EasyOC.ReplaceAction?includePreReleases=true)](https://www.nuget.org/packages/EasyOC.ReplaceAction)
 
 ## Orchard Core Reference
 

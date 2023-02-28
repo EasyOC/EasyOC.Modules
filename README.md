@@ -4,29 +4,31 @@ QQ 群:877196442 或者点击这里
 
 
 ## [EasyOC.ActionReplace](src/Modules/EasyOC.ReplaceAction)
-[![NuGet](https://img.shields.io/nuget/v/EasyOC.Users.svg)](https://www.nuget.org/packages/EasyOC.Users)
+[![NuGet Badge](https://buildstats.info/nuget/EasyOC.ReplaceAction?includePreReleases=true)](https://www.nuget.org/packages/EasyOC.ReplaceAction)
 
 Replace the implementation of the specified controller action in OrchardCore
 
 ## [EasyOC.Users](src/Modules/EasyOC.Users)
-[![NuGet](https://img.shields.io/nuget/v/EasyOC.Users.svg)](https://www.nuget.org/packages/EasyOC.Users)
+[![NuGet Badge](https://buildstats.info/nuget/EasyOC.Users?includePreReleases=true)](https://www.nuget.org/packages/EasyOC.Users)
 
 This module implements some controller action replacement with the help of `EasyOC.ReplaceAction`.
 
 ## [EasyOC.SwaggerUI](src/Modules/EasyOC.SwaggerUI)
-[![NuGet](https://img.shields.io/nuget/v/EasyOC.SwaggerUI.svg)](https://www.nuget.org/packages/EasyOC.SwaggerUI)
+[![NuGet Badge](https://buildstats.info/nuget/EasyOC.SwaggerUI?includePreReleases=true)](https://www.nuget.org/packages/EasyOC.SwaggerUI)
+
 
 - Adding Swagger UI support to OrchardCore
 - Integration OpenId code flow authentication
 
 ## [EasyOC.Workflows](src/Modules/EasyOC.Workflows)
-[![NuGet](https://img.shields.io/nuget/v/EasyOC.Workflows.svg)](https://www.nuget.org/packages/EasyOC.Workflows)
+[![NuGet Badge](https://buildstats.info/nuget/EasyOC.Workflows?includePreReleases=true)](https://www.nuget.org/packages/EasyOC.Workflows)
+
 ### EasyOC.Workflows.Timers
 Make the Timer Workflow Activty support site time zone.
 
 
 ## [EasyOC.Deployment](src/Modules/EasyOC.Deployment)
-[![NuGet](https://img.shields.io/nuget/v/EasyOC.Deployment.svg)](https://www.nuget.org/packages/EasyOC.Deployment)
+[![NuGet Badge](https://buildstats.info/nuget/EasyOC.Deployment?includePreReleases=true)](https://www.nuget.org/packages/EasyOC.Deployment)
 
 Improve the OC `Deployment` feature
 
