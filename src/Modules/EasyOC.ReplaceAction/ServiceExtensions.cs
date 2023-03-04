@@ -84,27 +84,25 @@ namespace EasyOC.ReplaceAction
                     }
                     else
                     {
-
+                        var actionMethodName = descriptor.MethodInfo.Name;
                         if (descriptor.ControllerTypeInfo.FullName == item.TargetControllerFullName &&
-                           item.ActionMapping.ContainsKey(descriptor.ActionName)
+                           item.ActionMapping.ContainsKey(actionMethodName)
                             )
                         {
                             descriptor.ControllerTypeInfo = item.NewController.GetTypeInfo();
-                            descriptor.MethodInfo = item.ActionMapping[descriptor.ActionName];
+                            descriptor.MethodInfo = item.ActionMapping[actionMethodName];
                             if (logger != null && logger.IsEnabled(LogLevel.Debug))
                             {
                                 logger.LogDebug("The Action:{action} of controller:{type} is replaced by {newContorller}.{method}",
                                     item.TargetControllerFullName,
-                                    descriptor.ActionName,
+                                    actionMethodName,
                                     descriptor.ControllerTypeInfo.FullName,
-                                    item.ActionMapping[descriptor.ActionName]
+                                    item.ActionMapping[actionMethodName]
                                 );
                             }
                         }
                     }
                 }
-
-
             }
             return serviceProvider;
         }
