@@ -46,6 +46,6 @@ namespace EasyOC.Users.Controllers
             }
 
             return SignOut(OpenIddictServerAspNetCoreDefaults.AuthenticationScheme);
-        } 
+        }
     }
 }

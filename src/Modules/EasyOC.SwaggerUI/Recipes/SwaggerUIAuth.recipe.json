@@ -41,7 +41,7 @@
       "name": "OpenIdApplication",
       "ClientId": "SwaggerClient",
       "ConsentType": "implicit",
-      "RedirectUris": "/Swagger/oauth2-redirect.html",
+      "RedirectUris": "http://localhost/Swagger/oauth2-redirect.html",
       "AllowAuthorizationCodeFlow": true,
       "AllowLogoutEndpoint": false,
       "AllowPasswordFlow": false,

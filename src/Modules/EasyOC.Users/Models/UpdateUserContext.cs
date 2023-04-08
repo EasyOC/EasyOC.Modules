@@ -1,7 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 using OrchardCore.Users;
 using OrchardCore.Users.Handlers;
-using System.Security.Claims;
 
 namespace EasyOC.Users.Models
 {

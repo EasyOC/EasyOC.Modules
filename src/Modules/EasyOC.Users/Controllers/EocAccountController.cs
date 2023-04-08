@@ -1,3 +1,4 @@
+using EasyOC.Users.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.DataProtection;
@@ -8,25 +9,22 @@ using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
+using OrchardCore;
 using OrchardCore.DisplayManagement.Notify;
 using OrchardCore.Entities;
 using OrchardCore.Modules;
 using OrchardCore.Scripting;
 using OrchardCore.Settings;
 using OrchardCore.Users;
+using OrchardCore.Users.Controllers;
 using OrchardCore.Users.Events;
 using OrchardCore.Users.Handlers;
 using OrchardCore.Users.Models;
 using OrchardCore.Users.Services;
 using OrchardCore.Users.ViewModels;
-using OrchardCore.Workflows.Services;
 using System.Security.Claims;
-using SignInResult = Microsoft.AspNetCore.Identity.SignInResult;
-
 using IWorkflowManager = OrchardCore.Workflows.Services.IWorkflowManager;
-using OrchardCore;
-using OrchardCore.Users.Controllers;
-using EasyOC.Users.Models;
+using SignInResult = Microsoft.AspNetCore.Identity.SignInResult;
 
 namespace EasyOC.Users.Controllers
 {

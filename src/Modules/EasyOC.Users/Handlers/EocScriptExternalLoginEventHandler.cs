@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 using OrchardCore.Entities;
 using OrchardCore.Scripting;
@@ -10,7 +9,6 @@ using OrchardCore.Settings;
 using OrchardCore.Users;
 using OrchardCore.Users.Handlers;
 using OrchardCore.Users.Models;
-using OrchardCore.Workflows.Helpers;
 
 namespace EasyOC.Users.Handlers
 {

@@ -30,7 +30,7 @@ namespace EasyOC.Users
                 nameof(EocAccountController.LinkExternalLogin),
                 nameof(EocAccountController.ExternalLoginCallback),
                 nameof(EocAccountController.RegisterExternalLogin)
-                ); 
+                );
         }
 
     }
