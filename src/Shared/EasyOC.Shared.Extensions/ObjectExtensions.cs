@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
 using Newtonsoft.Json.Linq;
-namespace System
+namespace EasyOC
 {
     /// <summary>
     /// Extension methods for all objects.

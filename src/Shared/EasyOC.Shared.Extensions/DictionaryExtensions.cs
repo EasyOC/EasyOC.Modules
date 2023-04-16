@@ -1,6 +1,6 @@
 ﻿using System.Collections.Concurrent;
 
-namespace System.Collections.Generic
+namespace EasyOC
 {
     public static class DictionaryExtensions
     {
