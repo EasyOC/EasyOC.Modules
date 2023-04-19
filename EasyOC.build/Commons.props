@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<!-- after 1.0.3 version depend by tags v*   -->
 		<VersionPrefix>1.0.7</VersionPrefix>
-		<OrchardCoreVersion>1.5.0</OrchardCoreVersion>
+		<OrchardCoreVersion>1.6.0</OrchardCoreVersion>
 		<!--<VersionSuffix>preview</VersionSuffix>-->
 		<PackageTags>OrcardCore,EasyOC</PackageTags>
 		<VersionSuffix Condition="'$(VersionSuffix)'!='' AND '$(BuildNumber)' != ''">$(VersionSuffix)</VersionSuffix>
