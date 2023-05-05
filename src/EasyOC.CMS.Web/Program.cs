@@ -1,9 +1,7 @@
 using Microsoft.AspNetCore.Identity;
-using OrchardCore.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Host.UseNLogHost();
 
 builder.Services
      .Configure<IdentityOptions>(options =>
