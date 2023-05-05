@@ -4,7 +4,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace System
+namespace EasyOC
 {
     //
     // 摘要:

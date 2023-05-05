@@ -8,7 +8,7 @@ Replace the implementation of the specified controller action in OrchardCore
 
 ## Orchard Core Reference
 
-This module is referencing a stable build of Orchard Core ([`1.5.0`](https://www.nuget.org/packages/OrchardCore.Module.Targets/1.5.0)).
+This module is referencing a stable build of Orchard Core ([`1.6.0`](https://www.nuget.org/packages/OrchardCore.Module.Targets/1.6.0)).
 
 ## How to use
 
