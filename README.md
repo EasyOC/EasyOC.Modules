@@ -1,8 +1,6 @@
 # Orchard Core EasyOC.Modules
 
-This repository contains a set of modules for [Orchard Core CMS](https://github.com/OrchardCMS/OrchardCore) that driven by the community members who love Orchard Core.
-
-This will encourage all the passionate developers to build the modules that aren't included in Orchard Core. Such modules may necessary for the community or essential for any sort of CMS.
+The repository contains a set of modules for the [Orchard Core CMS](https://github.com/OrchardCMS/OrchardCore),  and the repository is working to make Orchard Core easier to use.
 
 QQ 群:877196442 或者点击这里
 [![Orchard Core CN 中文讨论组](https://docs.orchardcore.net/en/latest/docs/assets/images/orchard-core-cn-community-logo.png)](https://shang.qq.com/wpa/qunwpa?idkey=48721591a71ee7586316604a7a4ee99d26fd977c6120370a06585085a5936f62) 
