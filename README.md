@@ -8,6 +8,11 @@ QQ 群:877196442 或者点击这里
 [![Orchard Core CN 中文讨论组](https://docs.orchardcore.net/en/latest/docs/assets/images/orchard-core-cn-community-logo.png)](https://shang.qq.com/wpa/qunwpa?idkey=48721591a71ee7586316604a7a4ee99d26fd977c6120370a06585085a5936f62) 
 
 
+## Orchard Core Reference
+
+This repositry is referencing a stable build of Orchard Core ([`1.5.0`](https://www.nuget.org/packages/OrchardCore.Module.Targets/1.5.0)).
+
+
 ## [EasyOC.ActionReplace](src/Modules/EasyOC.ReplaceAction)
 [![NuGet Badge](https://buildstats.info/nuget/EasyOC.ReplaceAction?includePreReleases=true)](https://www.nuget.org/packages/EasyOC.ReplaceAction)
 
@@ -40,9 +45,11 @@ Improve the OC `Deployment` feature
  
 
 
-## Orchard Core Reference
+## 鸣谢
 
-This repositry is referencing a stable build of Orchard Core ([`1.5.0`](https://www.nuget.org/packages/OrchardCore.Module.Targets/1.5.0)).
+感谢 JetBrains 为开源项目提供[免费赞助](https://www.jetbrains.com/community/opensource/#support)的的 [Rider](https://www.jetbrains.com/zh-cn/rider/) 等 IDE 的授权
+
+![Rider](https://resources.jetbrains.com/storage/products/company/brand/logos/Rider.svg)
 
 
 
