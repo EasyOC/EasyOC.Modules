@@ -74,5 +74,15 @@ public override void ConfigureServices(IServiceCollection services)
                 nameof(EocAccountController.ExternalLoginCallback),
                 nameof(EocAccountController.RegisterExternalLogin)
                 );
+    //sample 7  Support for overloaded method matching
+        services.ReplaceAction<EocActivityController>("OrchardCore.Workflows.Controllers.ActivityController",
+                new List<MethodDescription>()
+                {
+                    new MethodDescription { Name = "Create", Parameters = new[] { typeof(string), typeof(long), typeof(string) }},
+                    new MethodDescription { Name = "Create", Parameters = new[] { typeof(string), typeof(ActivityEditViewModel) }},
+                    new MethodDescription { Name = "Edit", Parameters = new[] { typeof(long), typeof(string), typeof(string) }},
+                });
 }
 ```
+
+
