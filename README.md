@@ -10,7 +10,7 @@ QQ 群:877196442 或者点击这里
 
 ## Orchard Core Reference
 
-This repositry is referencing a stable build of Orchard Core ([`1.5.0`](https://www.nuget.org/packages/OrchardCore.Module.Targets/1.5.0)).
+This repositry is referencing a stable build of Orchard Core ([`1.6.0`](https://www.nuget.org/packages/OrchardCore.Module.Targets/1.6.0)).
 
 
 ## [EasyOC.ActionReplace](src/Modules/EasyOC.ReplaceAction)
