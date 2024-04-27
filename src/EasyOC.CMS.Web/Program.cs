@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Identity;
+using EasyOC;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.LoadExternalLibs();
 
 builder.Services
      .Configure<IdentityOptions>(options =>

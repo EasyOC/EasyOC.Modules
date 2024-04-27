@@ -2,8 +2,8 @@
 
 	<PropertyGroup>
 		<!-- after 1.0.3 version depend by tags v*   -->
-		<VersionPrefix>1.0.7</VersionPrefix>
-		<OrchardCoreVersion>1.6.0</OrchardCoreVersion>
+		<VersionPrefix>1.0.8</VersionPrefix>
+		<OrchardCoreVersion>1.8.0</OrchardCoreVersion>
 		<!--<VersionSuffix>preview</VersionSuffix>-->
 		<PackageTags>OrcardCore,EasyOC</PackageTags>
 		<VersionSuffix Condition="'$(VersionSuffix)'!='' AND '$(BuildNumber)' != ''">$(VersionSuffix)</VersionSuffix>
@@ -31,7 +31,7 @@
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<PackageProjectUrl>https://github.com/EasyOC/EasyOC.Modules/</PackageProjectUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 
 	</PropertyGroup>
 	<ItemGroup>
