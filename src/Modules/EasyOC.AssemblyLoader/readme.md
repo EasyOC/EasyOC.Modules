@@ -1,4 +1,4 @@
-Load assemblies from config file
+## Load assemblies from config file
 
 
 appsettings.json
@@ -6,7 +6,7 @@ appsettings.json
 "OrchardCore":{
     "ExternalLib": {
       "Paths": [ 
-          "ExternalLibs", // ¶¯Ì¬¿âÂ·¾¶ Ïà¶ÔÓÚApp_Data Â·¾¶,»òÖ¸¶¨ÍêÕûÂ·¾¶
+          "ExternalLibs", // åŠ¨æ€åº“è·¯å¾„ ç›¸å¯¹äºApp_Data è·¯å¾„,æˆ–æŒ‡å®šå®Œæ•´è·¯å¾„
           "D:\\project\\bin\\net8.0"// Your external lib 
       ]
     },
