@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<!-- after 1.0.3 version depend by tags v*   -->
-		<VersionPrefix>1.0.8</VersionPrefix>
+		<VersionPrefix>1.8.0</VersionPrefix>
 		<OrchardCoreVersion>1.8.0</OrchardCoreVersion>
 		<!--<VersionSuffix>preview</VersionSuffix>-->
 		<PackageTags>OrcardCore,EasyOC</PackageTags>
@@ -11,7 +11,7 @@
 		<WarningsNotAsErrors>612,618</WarningsNotAsErrors>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<Description>
-			This repositry is referencing a stable build of OrchardCore (1.6.0).
+			This repositry is referencing a stable build of OrchardCore (1.8.0).
 			Please give me a start if you find the module helpful, thanks. https://github.com/EasyOC/EasyOC.Modules
 			如果您认为该模块对你有帮助，请给我一个start ，谢谢 https://github.com/EasyOC/EasyOC.Modules
 			国内用户 欢迎加入QQ 群：877196442
