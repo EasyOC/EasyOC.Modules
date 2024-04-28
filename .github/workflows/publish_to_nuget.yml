@@ -9,7 +9,7 @@ jobs:
   #https://github.com/Lombiq/GitHub-Actions/blob/dev/Docs/Workflows.md#nuget-publish-workflow
     #uses: EasyOC/GitHub-Actions/.github/workflows/publish-nuget.yml@version_rule
     uses: Lombiq/GitHub-Actions/.github/workflows/publish-nuget.yml@v1.0
-    with:
-      dotnet-version: 8.0
+    # with:
+    #   dotnet-version: 8.0.x
     secrets:
       API_KEY: ${{ secrets.NUGET_API_KEY }}
