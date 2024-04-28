@@ -8,7 +8,27 @@ QQ 群:877196442 或者点击这里
 
 ## Orchard Core Reference
 
-This repositry is referencing a stable build of Orchard Core ([`1.6.0`](https://www.nuget.org/packages/OrchardCore.Module.Targets/1.6.0)).
+This repositry is referencing a stable build of Orchard Core ([`1.8.0`](https://www.nuget.org/packages/OrchardCore.Module.Targets/1.6.0)).
+
+
+
+## [EasyOC.AssemblyLoader](src/Modules/EasyOC.AssemblyLoader)
+[![NuGet Badge](https://buildstats.info/nuget/EasyOC.AssemblyLoader?includePreReleases=true)](https://www.nuget.org/packages/EasyOC.AssemblyLoader)
+
+Load assemblies from config file
+
+appsettings.json
+```json
+"OrchardCore":{
+    "ExternalLib": {
+      "Paths": [ 
+          "ExternalLibs", // 动态库路径 相对于App_Data 路径,或指定完整路径
+          "D:\\project\\bin\\net8.0"// Your external lib 
+      ]
+    },
+}
+
+```
 
 
 ## [EasyOC.ActionReplace](src/Modules/EasyOC.ReplaceAction)
