@@ -11,13 +11,10 @@ namespace EasyOC.AssemblyLoader
         public static List<Assembly> ExternalAssemblies => _assemblies;
         public ExternalModuleNamesProvider()
         {
-            //_moduleNames = _assemblies.Select(x=>x.;
             _moduleNames = _assemblies.SelectMany(x =>
             {
                 var modules = x.GetCustomAttributes<OrchardCore.Modules.Manifest.ModuleAttribute>();
                 var names = modules.Select(modules => modules.Id).ToList();
-                //var features = x.GetCustomAttributes<OrchardCore.Modules.Manifest.FeatureAttribute>();
-                //names.AddRange(features.Select(f => f.Name).ToList());
                 return names;
             }).Distinct().Where(x => !string.IsNullOrEmpty(x));
         }
