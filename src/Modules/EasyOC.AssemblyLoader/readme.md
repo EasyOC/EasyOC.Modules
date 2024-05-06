@@ -6,7 +6,7 @@ appsettings.json
 "OrchardCore":{
     "ExternalLib": {
       "Paths": [ 
-          "ExternalLibs", // 动态库路径 相对于App_Data 路径,或指定完整路径
+          "ExternalLibs", // Dynamic library path Relative to App_Data path, or specify the full path.
           "D:\\project\\bin\\net8.0"// Your external lib 
       ]
     },
