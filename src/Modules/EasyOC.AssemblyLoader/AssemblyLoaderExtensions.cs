@@ -41,7 +41,6 @@ namespace EasyOC
                     {
                         try
                         {
-                            //var loader = new AssemblyDependencyResolver(assemblyFilePath); 
                             var assembly = Assembly.LoadFrom(assemblyFilePath);
                             if (!ExternalModuleNamesProvider.ExternalAssemblies.Contains(assembly))
                             {
